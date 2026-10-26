@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173c2d">
+<meta name="description" content="เกมจำลองชีวิตนิสิต 4 ปีในมหาวิทยาลัยเกษตรศาสตร์">
+<title>4 Years in KU — สี่ปีที่เกษตร</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+<header><a class="brand" href="#" aria-label="4 Years in KU"><span class="mark">K</span><span><strong>4 YEARS IN KU</strong><small>บันทึกชีวิตนิสิต · บางเขน</small></span></a><div class="online"><i></i>ชีวิตหนึ่ง มีได้หลายทาง</div></header>
+<main>
+<section class="screen" id="intro">
+<div class="hero">
+<div class="herocopy"><div class="eyebrow">A SMALL LIFE SIMULATOR</div><h1>สี่ปี<span>ที่เกษตร</span></h1><p class="lede">จากวันแรกที่เดินหลงในแคมปัส จนถึงวันที่รับปริญญา ลองดูสิว่า 4 ปีในรั้วมหาวิทยาลัยเกษตรศาสตร์ของคุณจะเป็นแบบไหน</p><div class="meta"><span>◷ 8 เทอม · 12 การตัดสินใจ</span><span>✳ ทุกทางเลือกมีผล</span></div></div>
+<div class="heroart" aria-hidden="true"><svg viewBox="0 0 500 410" preserveAspectRatio="xMidYMid slice"><rect width="500" height="410" fill="#a9c2a0"/><circle cx="367" cy="104" r="62" fill="#f1d27c"/><circle cx="367" cy="104" r="93" fill="#f1d27c" opacity=".12"/><path d="M0 250Q135 155 270 245T500 220V410H0Z" fill="#6f927b"/><path d="M0 295Q160 205 340 280T500 245V410H0Z" fill="#315c45"/><path d="M242 410Q290 317 277 262L333 260Q312 333 373 410Z" fill="#d7c69c"/><rect x="157" y="214" width="204" height="106" fill="#f1ecd9"/><path d="M140 214L259 167L378 214Z" fill="#926749"/><rect x="157" y="214" width="204" height="10" fill="#b86c49"/><path d="M175 244H343V290H175Z" fill="#8fa89a"/><path d="M201 244V291M231 244V291M261 244V291M291 244V291M321 244V291" stroke="#eee7d2" stroke-width="8"/><rect x="239" y="265" width="40" height="55" rx="20" fill="#a76f4a"/><g fill="#205139"><circle cx="73" cy="215" r="42"/><circle cx="43" cy="233" r="30"/><circle cx="103" cy="237" r="29"/><circle cx="429" cy="194" r="52"/><circle cx="392" cy="215" r="35"/><circle cx="463" cy="220" r="34"/></g><g fill="#624f39"><rect x="66" y="235" width="14" height="95" rx="5"/><rect x="423" y="222" width="14" height="110" rx="5"/></g><rect x="17" y="17" width="190" height="24" rx="12" fill="#ffffff66" stroke="#ffffff99"/><text x="30" y="33" fill="#173c2d" font-size="10" font-family="monospace">BANG KHEN CAMPUS · THAILAND</text><text x="360" y="392" fill="#ffffff" font-size="9" font-family="monospace">LAT. 13° 50' 52.6" N</text></svg></div>
+</div>
+<div class="startrow">
+<form class="startform" id="startform"><div><label for="name">ก่อนเริ่ม บอกชื่อเล่นของคุณหน่อย</label><input class="name" id="name" maxlength="20" placeholder="เช่น ใบตอง" autocomplete="off"></div><button class="cta" type="submit">สุ่มชีวิตของฉัน <span>→</span></button></form>
+<div class="hint"><div class="hinticon">✦</div><div><strong>เล่นอย่างไร</strong><p>เลือกทางในแต่ละเทอม แล้วดูว่าผลลัพธ์พาคุณไปพบชีวิตแบบไหน</p></div></div>
+</div>
+</section>
+<section class="screen" id="game" hidden aria-labelledby="game-title">
+<div class="gamehead"><div><div class="eyebrow">YOUR KU STORY</div><h2 id="game-title">เทอมนี้จะเลือกทางไหน?</h2></div><div class="student"><div class="avatar" id="avatar">🌱</div><div><strong id="player">นิสิต</strong><small id="path">เส้นทางชีวิต</small></div></div></div>
+<div class="layout">
+<article class="story">
+<div class="storybar"><div class="bartext"><span id="semester"></span><span id="counter"></span></div><div class="progress"><i id="progress"></i></div></div>
+<div class="storybody"><div class="chapter" id="chapter"></div><h3 id="event-title"></h3><p id="event-body"></p><div class="lastnote" id="lastnote" hidden><b>✦</b><span id="outcome"></span></div><div class="choices" id="choices" role="group" aria-label="เลือกการตัดสินใจ"></div></div>
+</article>
+<aside class="stack">
+<section class="panel"><div class="panelhead"><h3>สถานะชีวิต</h3><span>LIVE STATS</span></div>
+<div class="gpa"><div><span>เกรดเฉลี่ยสะสม</span><br><small>จากการเรียนแต่ละเทอม</small></div><strong id="gpa">2.75</strong></div>
+<div class="meter"><div class="meterlabel"><span>ความสุข</span><b id="joy-n">64%</b></div><div class="track"><i id="joy-b"></i></div></div>
+<div class="meter"><div class="meterlabel"><span>พลังใจ</span><b id="energy-n">72%</b></div><div class="track"><i class="blue" id="energy-b"></i></div></div>
+<div class="meter"><div class="meterlabel"><span>เพื่อนและกิจกรรม</span><b id="friends-n">35%</b></div><div class="track"><i class="gold" id="friends-b"></i></div></div>
+<div class="meter"><div class="meterlabel"><span>เงินใช้ได้</span><b id="funds-n">58%</b></div><div class="track"><i class="coral" id="funds-b"></i></div></div>
+<p class="fineprint">ค่าต่าง ๆ เป็นภาพจำลอง เปลี่ยนแปลงได้ตามทางที่คุณเลือก</p></section>
+<section class="panel journalpanel"><div class="panelhead"><h3>บันทึกระหว่างทาง</h3><span id="journal-count">0 MOMENTS</span></div><div id="journal"><div class="empty">ทุกการตัดสินใจจะกลายเป็นส่วนหนึ่งของเรื่องราวคุณ</div></div></section>
+</aside>
+</div>
+<div class="gamefoot"><span>ชีวิตในรั้วมหาวิทยาลัย ไม่มีสูตรสำเร็จ</span><button class="linkbutton" id="restart" type="button">เริ่มชีวิตใหม่</button></div>
+</section>
+<section class="screen" id="result" hidden aria-labelledby="result-title">
+<div class="result"><div class="eyebrow">THE END OF THIS CHAPTER</div>
+<div class="cover"><div class="eyebrow">FOUR YEARS LATER · KU</div><h2 id="result-title"></h2><p id="result-desc"></p><div class="finalstats"><div class="finalstat"><span>เกรดเฉลี่ยสะสม</span><strong id="final-gpa"></strong></div><div class="finalstat"><span>ชีวิตมหาวิทยาลัย</span><strong id="final-label"></strong></div></div></div>
+<div class="resultgrid"><section class="resultpanel"><h3>กราฟชีวิต 4 ปี</h3><div class="legend"><span><i></i>ความสุข</span><span><i class="blue"></i>พลังใจ</span></div><svg class="graph" id="graph" viewBox="0 0 500 180" role="img" aria-label="กราฟความสุขและพลังใจตลอด 4 ปี"></svg></section><section class="resultpanel"><h3>เรื่องราวที่คุณเลือก</h3><div class="log" id="log"></div></section></div>
+<div class="actions"><button class="cta" id="share">แชร์เรื่องราวของฉัน <span>↗</span></button><button class="secondary" id="again">เริ่มชีวิตใหม่อีกครั้ง</button></div>
+<p class="sharemsg" id="sharemsg">หนึ่งชีวิต หลายเรื่องราว · ลองเล่นใหม่เพื่อพบเส้นทางอีกแบบ</p></div>
+</section>
+</main>
+<footer><div class="foot"><span>4 YEARS IN KU · เกมจำลองชีวิตนิสิตเพื่อความบันเทิง</span><span>หนึ่งทางเลือก คืออีกหนึ่งเรื่องราว</span></div></footer>
+</div>
+<script src="script.js"></script>
+<script src="script-addon.js"></script>
+<script src="script-time.js"></script>
+<script src="script-study.js"></script>
+<script src="script-budget.js"></script>
+<script src="script-upgrade.js"></script>
+</body>
+</html>
